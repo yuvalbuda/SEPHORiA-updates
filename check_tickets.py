@@ -32,7 +32,7 @@ def check_tickets():
             content = response.text.lower()
             
             # Trigger alert if the unavailable state changes
-            if "unavailable" in content and "no tickets" not in content:
+            if "unavailable" in content:
                 alert_text = (
                     "🚨 *SEPHORiA London Ticket Alert!*\n\n"
                     "Resale availability detected on Weezevent.\n"
