@@ -41,6 +41,7 @@ def check_tickets():
                 send_telegram_alert(alert_text)
                 print("Ticket availability detected! Alert sent.")
             else:
+                send_telegram_alert("no tickets available yet")
                 print("Checked: No tickets available yet.")
         else:
             print(f"API returned status code: {response.status_code}")
