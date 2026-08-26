@@ -102,4 +102,4 @@ def run_loop(duration_minutes=60, check_interval_seconds=30):
 
 if __name__ == "__main__":
   # Run loop for 50 minutes, polling every 30 seconds
-  run_loop(duration_minutes=50, check_interval_seconds=30)
+  run_loop(duration_minutes=60 check_interval_seconds=30)
