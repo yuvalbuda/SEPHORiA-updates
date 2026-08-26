@@ -81,7 +81,7 @@ def check_tickets():
     return False
 
 
-def run_loop(duration_minutes=50, check_interval_seconds=30):
+def run_loop(duration_minutes=60, check_interval_seconds=30):
   """Runs continuous checks for a given duration."""
   start_time = time.time()
   end_time = start_time + (duration_minutes * 60)
