@@ -6,6 +6,11 @@ on:
     - cron: '0 * * * *'
   workflow_dispatch:
 
+# Ensures only one instance of the monitoring workflow runs at a time
+concurrency:
+  group: ticket-checker
+  cancel-in-progress: true
+
 jobs:
   check-tickets:
     runs-on: ubuntu-latest
